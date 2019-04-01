@@ -13,4 +13,12 @@ print('read finished, there are ', len(data), 'data')
 for x in data:
 	y += len(x)
 	z = y/len(data)
-print('the average length of the data is ', z)	
+print('the average length of the data is ', z)
+
+new = []
+
+for d in data:
+	if len(d) < 100:
+		new.append(d)
+print(len(new))
+print(new[3])
